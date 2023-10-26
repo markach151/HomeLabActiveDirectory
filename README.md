@@ -13,7 +13,7 @@ Using Oracle VirtualBox, I created a Windows Server 2019 computer that acted as 
 
 ![image14](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/35fbd29a-9bd3-47cb-bdd1-e18433ce59eb)
 
-Two Network Interface Cards (NIC) were created: one was dedicated to the internet that is running NAT and the other one is dedicated to the internal VirtualBox network.
+Two Network Interface Cards (NIC) were created: one was dedicated to the internet that is running NAT and the other one was dedicated to the internal VirtualBox network.
 
 ![image13](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/dc231875-d559-4035-818b-a7d068566bec) ![image9](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/d4e91276-26b2-4e7a-8c88-6fa5ccb3b6da)
 
