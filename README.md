@@ -41,13 +41,12 @@ DHCP Server role installed.
 
 Randomized names for the created users. I also placed my name on the list.
 
-![image20](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/5b326011-fbee-4062-85bd-07d07cc499bc)
+![image20](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/5b326011-fbee-4062-85bd-07d07cc499bc) ![image8](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/c7861ccd-86f7-4923-b496-57eb245d422a)
 
 PowerShell script used to create users in Active Directory. 
 
 ![image17](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/1aed81d5-0f39-426a-90d9-b360a8d907b9)
 ![image5](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/5989ca1b-1bd2-4897-8de2-ac023b2e52ad)
-![image8](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/c7861ccd-86f7-4923-b496-57eb245d422a)
 
 I created a Windows 10 virtual machine using an internal NIC. This virtual machine acted as the client. 
 
