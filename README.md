@@ -7,7 +7,7 @@ For this project, I created an Active Directory lab using VirtualBox. The first 
 ![image1](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/ff7ef5e2-d050-4543-ba0a-0496b2e836ee)
 
 
-# Setup 
+## Setup 
 
 Using Oracle VirtualBox, I created a Windows Server 2019 computer that acted as the Domain Controller.
 
@@ -65,3 +65,5 @@ We can see I have one address lease from the client computer I created. This is 
 After joining the client computer to the domain we can now see it in the Active Directory Users and Computers. If I were to delete this I would not be able to login with one of the user accounts I created.
 
 ![image21](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/55798a50-0c22-4692-ba5f-f70c59953a40)
+
+## Credit to Josh Madakor for the project tutorial!
