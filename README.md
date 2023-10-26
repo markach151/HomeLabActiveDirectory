@@ -65,4 +65,9 @@ After joining the client computer to the domain we can now see it in the Active 
 
 ![image21](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/55798a50-0c22-4692-ba5f-f70c59953a40)
 
+I successfully signed in to the domain with my user account that I created.  
+![image2](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/f88a63d4-0689-45d1-bc31-a95c367065a9) ![image1](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/23f88a79-19e0-4783-a965-ac1c57dfa3f5) 
+ 
+
+
 ## Credit to Josh Madakor for the project tutorial!
