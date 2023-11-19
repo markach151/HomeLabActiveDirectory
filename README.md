@@ -2,7 +2,7 @@
 
 
 ## Project Description
-For this project, I created an Active Directory lab using VirtualBox. The first virtual machine I created acted as the Domain Controller housing Active Directory. Two network adaptors were used for this virtual machine. One was used to connect to the outside internet while the other one was used to connect to the VirtualBox private network. IP addressing was assigned for the internal network. The external networking automatically got IP addressing from my home network. Active Directory was installed and then I created the domain. I configured Network Address Translation and routing next so the clients on the private network could reach the internet through the Domain Controller. Dynamic Host Configuration Protocol (DHCP) was set up on the Domain Controller so when the client machine was created it could automatically get an IP address. Lastly, I ran a PowerShell script on the Domain Controller that automatically created over a thousand users in Active Directory. Another virtual machine was created and connected to the private VirtualBox network. The client was joined to the domain and a domain account was used to login to it.   
+For this project, I created an Active Directory lab using VirtualBox. The first virtual machine I created acted as the Domain Controller housing Active Directory. Two network adaptors were used for this virtual machine. One was used to connect to the outside internet while the other one was used to connect to the VirtualBox private network. IP addressing was assigned for the internal network. The external networking automatically got IP addressing from my home network. Active Directory was installed and then I created the domain. I configured Network Address Translation and routing next so the clients on the private network could reach the internet through the Domain Controller. Dynamic Host Configuration Protocol was set up on the Domain Controller so when the client machine was created it could automatically get an IP address. Lastly, I ran a PowerShell script on the Domain Controller that automatically created over a thousand users in Active Directory. Another virtual machine was created and connected to the private VirtualBox network. The client was joined to the domain and a domain account was used to login to it.   
 
 ![image1](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/ff7ef5e2-d050-4543-ba0a-0496b2e836ee)
 
@@ -29,13 +29,13 @@ I created an _ADMINS organizational unit and added myself as a user.
 
 ![image6](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/b291cd23-5ea0-46d3-8b92-0c1c08f7f4ba)
 
-Remote Access role installed.
+Remote Access role installed. The purpose of this is to allow the Windows 10 Client that I created further along in the project to be on the private virtual network but still be able to access the internet through the Domain Controller. 
 
 ![image2](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/66fa0f89-ab9e-4002-87dd-496e3bec4009)
 
 ![image7](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/9211d685-096a-4ac4-bc9c-08b6931d4637) ![image11](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/61aadf5f-18a9-4795-8991-4b26c9588dee)
 
-DHCP Server role installed.
+Dynamic Host Configuration Protocol Server role installed. The Dynamic Host Configuration Protocol service maintains a pool of available IP addresses and dynamically leases these configurations to client computers. 
 
 ![image18](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/2e9635a7-faff-4aef-a4dc-c350de4667f4) ![image19](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/1d81c286-20b4-470d-a2df-1d014cddd2e9) 
 
