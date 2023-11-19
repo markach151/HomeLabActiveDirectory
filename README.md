@@ -44,9 +44,13 @@ Randomized names for the created users. I also placed my name on the list.
 ![image20](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/5b326011-fbee-4062-85bd-07d07cc499bc) ![image8](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/c7861ccd-86f7-4923-b496-57eb245d422a)
 
 PowerShell script used to create users in Active Directory:
+
 Line 2-3: Variables that are used for username and password. All of the user accounts will have the password 'Password1'.
+
 Line 6: Takes the plaintext password from '$PASSWORD_FOR_USERS' and creates it into an object that PowerShell can use as a secure password.
+
 Line 7: Creates a new organizational unit called '_USERS'.
+
 Line 9-24: For each individual name in the list from 'names.txt', a new user will be created. The person's username is represented by their first initial and full last name. We get an alert in the command line everytime a user is created.   
 
 ![image17](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/1aed81d5-0f39-426a-90d9-b360a8d907b9)
