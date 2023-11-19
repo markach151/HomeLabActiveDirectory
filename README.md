@@ -13,7 +13,7 @@ Using Oracle VirtualBox, I created a Windows Server 2019 computer that acted as 
 
 ![image14](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/35fbd29a-9bd3-47cb-bdd1-e18433ce59eb)
 
-Two Network Interface Cards (NIC) were created: one was dedicated to the internet that is running NAT and the other one was dedicated to the internal VirtualBox network. Network Address Translation is a way to map multiple private addresses inside a local network to a public IP address before transferring the information onto the internet.
+Two Network Interface Cards were created: one was dedicated to the internet that is running NAT and the other one was dedicated to the internal VirtualBox network. Network Address Translation is a way to map multiple private addresses inside a local network to a public IP address before transferring the information onto the internet.
 
 ![image13](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/dc231875-d559-4035-818b-a7d068566bec) ![image9](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/d4e91276-26b2-4e7a-8c88-6fa5ccb3b6da)
 
@@ -43,12 +43,16 @@ Randomized names for the created users. I also placed my name on the list.
 
 ![image20](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/5b326011-fbee-4062-85bd-07d07cc499bc) ![image8](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/c7861ccd-86f7-4923-b496-57eb245d422a)
 
-PowerShell script used to create users in Active Directory. 
+PowerShell script used to create users in Active Directory:
+Line 2-3: Variables that are used for username and password. All of the user accounts will have the password 'Password1'.
+Line 6: Takes the plaintext password from '$PASSWORD_FOR_USERS' and creates it into an object that PowerShell can use as a secure password.
+Line 7: Creates a new organizational unit called '_USERS'.
+Line 9-24: For each individual name in the list from 'names.txt', a new user will be created. The person's username is represented by their first initial and full last name. We get an alert in the command line everytime a user is created.   
 
 ![image17](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/1aed81d5-0f39-426a-90d9-b360a8d907b9)
 ![image5](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/5989ca1b-1bd2-4897-8de2-ac023b2e52ad)
 
-I created a Windows 10 virtual machine using an internal NIC. This virtual machine acted as the client. 
+I created a Windows 10 virtual machine using an internal Network Interface Card. This virtual machine acted as the client. 
 
 ![image16](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/c9bfc80a-3161-4044-97b4-52bc69e14cd2)
 ![image10](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/a0550521-b114-45df-8618-a39e25e9c9c9)
@@ -66,6 +70,7 @@ After joining the client computer to the domain we can now see it in the Active 
 ![image21](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/55798a50-0c22-4692-ba5f-f70c59953a40)
 
 I successfully signed in to the domain with my user account that I created.  
+
 ![image2](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/f88a63d4-0689-45d1-bc31-a95c367065a9) ![image1](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/23f88a79-19e0-4783-a965-ac1c57dfa3f5) 
  
 
