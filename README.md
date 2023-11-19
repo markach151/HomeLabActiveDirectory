@@ -2,22 +2,22 @@
 
 
 ## Project Description
-For this project, I created an Active Directory lab using VirtualBox. The first virtual machine I created acted as the Domain Controller housing Active Directory. Two network adaptors were used for this virtual machine. One was used to connect to the outside internet while the other one was used to connect to the VirtualBox private network. IP addressing was assigned for the internal network. The external networking automatically got IP addressing from my home network. Active Directory was installed and then I created the domain. I configured Network Address Translation (NAT) and routing next so the clients on the private network could reach the internet through the Domain Controller. Dynamic Host Configuration Protocol (DHCP) was set up on the Domain Controller so when the client machine was created it could automatically get an IP address. Lastly, I ran a PowerShell script on the Domain Controller that automatically created over a thousand users in Active Directory. Another virtual machine was created and connected to the private VirtualBox network. The client was joined to the domain and a domain account was used to login to it.   
+For this project, I created an Active Directory lab using VirtualBox. The first virtual machine I created acted as the Domain Controller housing Active Directory. Two network adaptors were used for this virtual machine. One was used to connect to the outside internet while the other one was used to connect to the VirtualBox private network. IP addressing was assigned for the internal network. The external networking automatically got IP addressing from my home network. Active Directory was installed and then I created the domain. I configured Network Address Translation and routing next so the clients on the private network could reach the internet through the Domain Controller. Dynamic Host Configuration Protocol (DHCP) was set up on the Domain Controller so when the client machine was created it could automatically get an IP address. Lastly, I ran a PowerShell script on the Domain Controller that automatically created over a thousand users in Active Directory. Another virtual machine was created and connected to the private VirtualBox network. The client was joined to the domain and a domain account was used to login to it.   
 
 ![image1](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/ff7ef5e2-d050-4543-ba0a-0496b2e836ee)
 
 
 ## Setup 
 
-Using Oracle VirtualBox, I created a Windows Server 2019 computer that acted as the Domain Controller.
+Using Oracle VirtualBox, I created a Windows Server 2019 computer that acted as the Domain Controller. A Domain Controller is a server that manages network and identity seucurity, effectively acting as the gatekeeper for user authentication and authorization to IT resources within the domain. 
 
 ![image14](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/35fbd29a-9bd3-47cb-bdd1-e18433ce59eb)
 
-Two Network Interface Cards (NIC) were created: one was dedicated to the internet that is running NAT and the other one was dedicated to the internal VirtualBox network.
+Two Network Interface Cards (NIC) were created: one was dedicated to the internet that is running NAT and the other one was dedicated to the internal VirtualBox network. Network Address Translation is a way to map multiple private addresses inside a local network to a public IP address before transferring the information onto the internet.
 
 ![image13](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/dc231875-d559-4035-818b-a7d068566bec) ![image9](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/d4e91276-26b2-4e7a-8c88-6fa5ccb3b6da)
 
-Active Directory Domain Services installed.
+Active Directory Domain Services installed. This is the core component of Active Directory that enables users to authenticate and access resources on the network. It stores and organizes information about the people, devices and services connected to the network. I will now have a central point of administration for all activity.
 
 ![image12](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/35400c87-4fd5-4d25-8d9e-07e21d287979)
 
