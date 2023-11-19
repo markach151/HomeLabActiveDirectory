@@ -9,7 +9,7 @@ For this project, I created an Active Directory lab using VirtualBox. The first 
 
 
 ## Setup
-Using Oracle VirtualBox, I created a Windows Server 2019 computer that acted as the Domain Controller. A Domain Controller is a server that manages network and identity seucurity, effectively acting as the gatekeeper for user authentication and authorization to IT resources within the domain. 
+Using Oracle VirtualBox, I created a Windows Server 2019 computer that acted as the Domain Controller. A Domain Controller is a server that manages network and identity security, effectively acting as the gatekeeper for user authentication and authorization to IT resources within the domain. 
 
 ![image14](https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/35fbd29a-9bd3-47cb-bdd1-e18433ce59eb) 
 
