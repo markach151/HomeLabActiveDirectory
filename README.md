@@ -129,4 +129,4 @@ I successfully signed in to the domain with my user account that I created.
 <img src="https://github.com/markach151/HomeLabActiveDirectory/assets/84886088/23f88a79-19e0-4783-a965-ac1c57dfa3f5"> 
 </p>
 
-## Credit to Josh Madakor for the project tutorial!
+
